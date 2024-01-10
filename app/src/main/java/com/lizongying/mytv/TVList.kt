@@ -6,8 +6,6 @@ object TVList {
     }
 
     private var mappingLogo = mapOf(
-        "CCTV4K 超高清" to "https://resources.yangshipin.cn/assets/oms/image/202306/3e9d06fd7244d950df5838750f1c6ac3456e172b51caca2c16d2282125b111e8.png?imageMogr2/format/webp",
-        "CCTV8K 超高清" to "https://static.wikia.nocookie.net/logos/images/6/69/CCTV8K.png/revision/latest/scale-to-width-down/120?cb=20230104110835&path-prefix=vi",
         "CCTV1 综合" to "https://resources.yangshipin.cn/assets/oms/image/202306/d57905b93540bd15f0c48230dbbbff7ee0d645ff539e38866e2d15c8b9f7dfcd.png?imageMogr2/format/webp",
         "CCTV2 财经" to "https://resources.yangshipin.cn/assets/oms/image/202306/20115388de0207131af17eac86c33049b95d69eaff064e55653a1b941810a006.png?imageMogr2/format/webp",
         "CCTV3 综艺" to "https://resources.yangshipin.cn/assets/oms/image/202306/7b7a65c712450da3deb6ca66fbacf4f9aee00d3f20bd80eafb5ada01ec63eb3a.png?imageMogr2/format/webp",
@@ -68,8 +66,6 @@ object TVList {
         "海南卫视" to "https://resources.yangshipin.cn/assets/oms/image/202306/6e060391fde0469801fc3d84dbf204b4f8d650d251f17d7595a6964c0bb99e81.png?imageMogr2/format/webp",
     )
     private var mappingEPG = mapOf(
-        "CCTV4K 超高清" to "600002264",
-        "CCTV8K 超高清" to "600156816",
         "CCTV1 综合" to "600001859",
         "CCTV2 财经" to "600001800",
         "CCTV3 综艺" to "600001801",
@@ -130,8 +126,6 @@ object TVList {
         "海南卫视" to "600002506",
     )
     private var mappingVideo = mapOf(
-        "CCTV4K 超高清" to arrayOf("600002264", "2000266303"),
-        "CCTV8K 超高清" to arrayOf("600156816", "2020603421"),
         "CCTV1 综合" to arrayOf("600001859", "2000210103"),
         "CCTV2 财经" to arrayOf("600001800", "2000203603"),
         "CCTV3 综艺" to arrayOf("600001801", "2000203803"),
@@ -196,8 +190,6 @@ object TVList {
     private fun setupTV(): Map<String, List<TV>> {
         val tvs = """
 央视频道
-CCTV4K 超高清,
-CCTV8K 超高清,
 CCTV1 综合,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226231/index.m3u8
 CCTV2 财经,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226195/index.m3u8
 CCTV3 综艺,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226397/index.m3u8
